@@ -249,7 +249,32 @@ Neatline.on('start', function() {
     map.zoomOut();
   });
  
-document.querySelector('.results').innerHTML = 'Hello World!';
+var checkboxes = $('input[name="tag"]');
+
+checkboxes.change(function() {
+    
+    var tags = [];
+    
+    // Gather up the set of checked tags.
+    checkboxes.each(function(i, box) {
+        if ($(box).prop('checked')) {
+            tags.push($(box).val());   
+        }
+    });
+
+    // Set a single `tags` filter that shows records that have at least
+    // one of the selected tags. Could also require that the records have
+    // all of the tags, for logical AND, depending on what makes sense.
+    
+    Neatline.vent.trigger('setFilter', {
+        key: 'tags',
+        evaluator: function(record) {
+            var recordTags = record.splitTags();
+            return _.intersection(recordTags, tags).length;
+        }
+    });
+    
+});
 
 });
 

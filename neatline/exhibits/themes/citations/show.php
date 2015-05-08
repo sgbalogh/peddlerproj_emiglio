@@ -42,8 +42,19 @@
 <br>
 <div class="Book">Book</div>
   	  <div class="JournalArticle">Journal Article</div>
-<div class="results"></div>
 
+</div>
+
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-primary active">
+    <input type="checkbox" name="tag" value="AdditionalCareers"> Additional Careers
+  </label>
+  <label class="btn btn-primary">
+    <input type="checkbox" name="tag" value="AntiSemiticRhetoric"> Anti-Semitic Rhetoric
+  </label>
+  <label class="btn btn-primary">
+    <input type="checkbox" name="tag" value="Bartering"> Bartering
+  </label>
 </div>
  
 <?php echo foot(); ?>
