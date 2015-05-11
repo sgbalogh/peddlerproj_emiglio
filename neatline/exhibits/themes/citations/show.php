@@ -1,3 +1,4 @@
+
 <?php echo head(array(
   'title' => nl_getExhibitField('title'),
   'bodyclass' => 'neatline show'
@@ -15,7 +16,7 @@
 <?php echo nl_getExhibitMarkup(); ?>
 <?php echo nl_getNarrativeMarkup(); ?>
 
-<div id="faceting">
+<!-- <div id="faceting">
       <div class="AdditionalCareers">Additional Careers</div>
   	  <div class="AntiSemiticRhetoric">Anti-Semitic Rhetoric</div>
   	  <div class="Bartering">Bartering</div>
@@ -42,18 +43,76 @@
 <br>
 <div class="Book">Book</div>
   	  <div class="JournalArticle">Journal Article</div>
-
-</div>
+</div>-->
 
 <div class="btn-group" data-toggle="buttons">
-  <label class="btn btn-primary active">
+  <label class="btn btn-primary btn-xs">
     <input type="checkbox" name="tag" value="AdditionalCareers"> Additional Careers
   </label>
-  <label class="btn btn-primary">
+  <label class="btn btn-primary btn-xs">
     <input type="checkbox" name="tag" value="AntiSemiticRhetoric"> Anti-Semitic Rhetoric
   </label>
-  <label class="btn btn-primary">
-    <input type="checkbox" name="tag" value="Bartering"> Bartering
+  <label class="btn btn-primary btn-xs">
+    <input type="checkbox" name="tag" value="BusinessPractices"> Business Practices
+  </label>
+  <label class="btn btn-primary btn-xs">
+    <input type="checkbox" name="tag" value="ConflictViolenceCommunal"> Conflict/Violence -- Communal
+  </label>
+  <label class="btn btn-primary btn-xs">
+    <input type="checkbox" name="tag" value="ConflictViolencePersonal"> Conflict/Violence -- Personal
+  </label>
+  <label class="btn btn-primary btn-xs">
+    <input type="checkbox" name="tag" value="ContextualResource"> Contextual Resource
+  </label>
+  <label class="btn btn-primary btn-xs">
+    <input type="checkbox" name="tag" value="CulturalExchange"> Cultural Exchange
+  </label>
+  <label class="btn btn-primary btn-xs">
+    <input type="checkbox" name="tag" value="Family"> Family
+  </label>
+  <label class="btn btn-primary btn-xs">
+    <input type="checkbox" name="tag" value="LiteraryArtisticDepiction"> Literary or Artistic Depiction
+  </label>
+  <label class="btn btn-primary btn-xs">
+    <input type="checkbox" name="tag" value="NonPeddlingBackground"> Non-Peddling Background
+  </label>
+  <label class="btn btn-primary btn-xs">
+    <input type="checkbox" name="tag" value="PeddlingBackground"> Peddling Background
+  </label>
+  <label class="btn btn-primary btn-xs">
+    <input type="checkbox" name="tag" value="ReligiousPractices"> Religious Practices
+  </label>
+   <label class="btn btn-primary btn-xs">
+    <input type="checkbox" name="tag" value="RestrictionsCommerce"> Restrictions on Commerce/Trade
+  </label>
+   <label class="btn btn-primary btn-xs">
+    <input type="checkbox" name="tag" value="Routes"> Routes
+  </label>
+   <label class="btn btn-primary btn-xs">
+    <input type="checkbox" name="tag" value="Sponsor"> Sponsor
+  </label>
+   <label class="btn btn-primary btn-xs">
+    <input type="checkbox" name="tag" value="SubsequentCommercialCareers"> Subsequent Commercial Careers
+  </label>
+   <label class="btn btn-primary btn-xs">
+    <input type="checkbox" name="tag" value="SubsequentNonCommercial"> Subsequent Non-Commercial Careers
+  </label>
+   <label class="btn btn-primary btn-xs">
+    <input type="checkbox" name="tag" value="Transportation"> Transportation
+  </label>
+     <label class="btn btn-primary btn-xs">
+    <input type="checkbox" name="tag" value="VictimsOfCrime"> Victims Of Crime
+  </label>
+    <label class="btn btn-primary btn-xs">
+    <input type="checkbox" name="tag" value="Wares"> Wares
+  </label>
+  </div>
+  <div class="btn-group" data-toggle="buttons">
+   <label class="btn btn-warning btn-xs">
+    <input type="checkbox" name="tag" value="Books"> Books
+  </label>
+   <label class="btn btn-warning btn-xs">
+    <input type="checkbox" name="tag" value="JournalArticle"> Journal Articles
   </label>
 </div>
  
