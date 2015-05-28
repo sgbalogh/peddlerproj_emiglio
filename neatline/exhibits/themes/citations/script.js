@@ -1,6 +1,8 @@
 Neatline.on('start', function() {
+
+
  
-  var map = Neatline.request('MAP:getMap');
+/*  var map = Neatline.request('MAP:getMap');
  
   $('.testA').click(function() {
   	Neatline.vent.trigger('setFilter', {
@@ -248,11 +250,11 @@ Neatline.on('start', function() {
   $('.btn.out').click(function() {
     map.zoomOut();
   });
- 
+ */
 var checkboxes = $('input[name="tag"]');
 
 checkboxes.change(function() {
-    
+
     var tags = [];
     
     // Gather up the set of checked tags.
